@@ -37,7 +37,7 @@ nav .logo{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 80px;
 
 }
 
@@ -51,6 +51,7 @@ nav ul li a{
 
 .content{
     text-align: center;
+    padding-top: 90px;;
 }
 
 .content h1{
@@ -58,30 +59,33 @@ nav ul li a{
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
+    -webkit-text-stroke: .8pt rgb(194, 159, 5);
 }
 
-.content p{
-    font-size: 20px;
-    color:#fff;
+.content p{ /* font of paragraphs */
+    font-size: 30px;
+    color:rgb(194, 159, 5);
     font-weight: 60;
     padding-bottom: 1.2rem;
+    -webkit-text-stroke: .5pt rgb(252, 249, 249);
     
 }
 
 .content h1:hover{
-    -webkit-text-stroke: 2px #fff;
+    -webkit-text-stroke: 2px  rgb(194, 159, 5);
     color:transparent;
 }
 
-.content a{
+.content a{     /* button  */
     text-decoration: none;
     display: inline-block;
-    color:#fff;
+    color:rgb(194, 159, 5);
     font-size: 24px;
-    border: 2px solid #fff;
+    border: 2px solid rgb(252, 249, 249);
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
+    -webkit-text-stroke: .5pt rgb(252, 249, 249);
 }
 
 .back-video{
@@ -89,6 +93,12 @@ nav ul li a{
     right: 0;
     bottom: 0;
     z-index:-1;
+}
+
+
+
+ img{
+    opacity: 0.6;
 }
 
 @media (min-aspect-ratio: 16/9){
