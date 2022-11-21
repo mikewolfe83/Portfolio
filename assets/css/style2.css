@@ -14,7 +14,7 @@ body{
     font-family: 'Oswald', sans-serif;
     margin:0;
     color:#a58a11f4;
-    -webkit-text-stroke-width: .8px; 
+    -webkit-text-stroke-width: .3px; 
     -webkit-text-stroke-color: rgb(241, 242, 245);
 
 }
@@ -78,6 +78,7 @@ section p:hover{
     display: flex;
     width: 100%;
     height: 70px;
+    background: rgb(0, 0, 0);
     
     
     
@@ -102,7 +103,7 @@ section p:hover{
 .navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color:#f0d90ef4;
+    color:#e6b517ec;
 }
 
 .navbar ul li a:hover {
@@ -165,17 +166,17 @@ section p:hover{
 
 section#home p{
     font-size: 2.0rem;
+    
 }
 
 section#home{
-    background: url(../img/DSC02538.JPG) no-repeat center/ 
-    cover;
-
+    background: url(../img/C0010.MP4) 
 }
 
 /*history section */
 
-section#history h1{
+section#home h1{
+    padding-top: 2rem;
     font-size: 3rem;
 
 }
@@ -271,3 +272,36 @@ section#historycontent table{
 section#faqcontent{
     background: black;
 }
+
+/* form */
+#newpatientregistration{
+    background: rgba(0, 0, 0, 0.712);
+}
+
+.formlabel {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    
+    
+    
+}
+
+.error {
+    color: red;
+    padding-left: 5px;
+}
+
+/* backgorund video*/
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+  }

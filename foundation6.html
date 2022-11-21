@@ -1,0 +1,225 @@
+<!DOCTYPE html>  <!-- profile page opener -->
+<html lang="en">
+    <head>
+      <!-- starting head section -->
+      <title>Portfolio Test 2</title>
+      <meta charset="utf-8"/>
+      <meta name="robots" content="noindex">
+      <meta name= "description" content="First Private Spacecraft to the Space Station" />
+      <meta name="author" content="Michael Gray"/>
+      <meta name="keywords" content="Spacecraft,Space Station"/>
+      <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Cairo&family=Oswald&family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+      <link href="assets/css/style2.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+          <!-- finishing up head section -->
+    </head>
+
+    <body>
+
+            <header class="primary">
+
+                <nav class="navbar">
+                    <a href="foundation2.html"><img src="assets/img/Gold Flamingo.jpg" class="img-fluid" height="50" width="150"><img></a> <!-- logo back to landfing page -->
+
+                    <ul>
+                        <li><a href="foundation2.html">Home</a></li>
+                        <li><a href="foundation3.html">About</a></li>
+                        <li><a href="foundation4.html">Content</a></li>
+                        <li><a href="foundation5.html">Development</a></li>
+                        <li><a href="foundation6.html">Javascript</a></li>
+                    </ul>
+
+
+
+
+                </nav>
+
+            </header> <!-- close header -->
+
+            <div class="container">
+
+                
+
+                
+    
+                <section id="home"> <!--section home opening-->
+
+                    <video id="background-video" autoplay loop muted>
+                        <source src="assets/img/C0010.MP4" type="video/mp4">
+                        </video>
+
+                    <h1>Here is an example of a form that captures data.</h1>
+                
+                    
+                        <form id ="newpatientregistration"  action="https://brucebauer.info/assets/ITEC3650/datadump.php" target="_blank">
+                          
+                          
+                            <label class= "formlabel"for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" size="30" maxlength="30" data-rule-required="true" data-msg-required="First Name is Required" >
+                            <label for="fname" class="error"></label><br/>
+                    
+                            <label class= "formlabel"for="middle initial">Middle Initial: </label>
+                            <input type="text" id="middle" name="middle" size="1" maxlength="1" data-rule-required="true" data-msg-required="Middle Name is Required">
+                            <label for="middle" class="error"></label><br/>
+                    
+                            <label class= "formlabel" for="lname">last name:</label>
+                            <input type="text" id="lname" name="lname" size="30" maxlength="30" data-rule-required="true" data-msg-required="Last Name Name is Required">
+                            <label for="lname" class="error"></label><br/>
+                    
+                            <label class= "formlabel" for="email">last name:</label>
+                            <input type="text" id="email" name="email" size="30" maxlength="30" data-rule-required="true" data-msg-required="Email Address is Required">
+                            <label for="email" class="error"></label><br/>
+                    
+                            <label class= "formlabel" for="sex">Sex:</label>
+                            <label for="male"><input type="radio" name="male" id="male" value="male">male</label>
+                    
+                            <label for="female"><input type="radio" name="female" id="female" value="female">female</label>
+                            <label for="male"><input type="radio" name="n" id="n" value="n">N/A</label><br>
+                    
+                            <label class= "formlabel" for="birthday">Birthday:</label> 
+                            <input type="text" id="birthday" name="birthday" min="8" maxlength="8" data-rule-required="true" data-msg-required="Birth Date is Required"><br>
+                            <label for="birthday" class="error"></label><br/> 
+                    
+                            <label class= "formlabel" for="height">Height(inches):</label> 
+                            <input type="text" id="height" name="height" min="3" maxlength="3" data-rule-required="true" data-msg-required="Height is Required">
+                            <label for="height" class="error"></label><br/>
+                    
+                            <label class= "formlabel" for="weight">Weight(pounds):</label> 
+                            <input type="text" id="weight" name="weight" min="3" maxlength="3" data-rule-required="true" data-msg-required="Weight is Required">
+                            <label for="weight" class="error"></label><br/>
+                    
+                            <hr>
+                            <label class= "formlabel" for="phonenumber">Phone Number:</label> 
+                            <input type="text" id="phonenumber" name="phonenumber" min="14" maxlength="14" data-rule-required="true" data-msg-required="Phone Number is Required"><br>
+                            <label for="phonenumber" class="error"></label><br/>
+                    
+                    
+                            <label class= "formlabel" for="maritalstatus">Marital Status:</label> 
+                            <select name="maritalstatus" id="maritalstatus"> 
+                            <option value=""> select a status </option> 
+                            <option value="s">single </option> 
+                            <option value="m">married </option>
+                            <option value="d">divorced </option>
+                            <option value="l">legally separated </option>
+                            <option value="w">widowed </option>
+                            </select><br>
+                            <label class= "formlabel" for="Address">Address:</label> 
+                            <input type="address" id="address" name="address" min="30" maxlength="30" data-rule-required="true" data-msg-required="Address is Required">
+                            <label for="address" class="error"></label><br/>
+                    
+                            <label class= "formlabel" for="city">city:</label> 
+                            <input type="city" id="city" name="city" min="30" maxlength="30"><br>
+                            <label for="city" class="error"></label><br/>
+                            
+                            <label class= "formlabel" for="state">state:</label> 
+                            <select name="state">
+                              <option value="AL">Alabama</option>
+                              <option value="AK">Alaska</option>
+                              <option value="AZ">Arizona</option>
+                              <option value="AR">Arkansas</option>
+                              <option value="CA">California</option>
+                              <option value="CO">Colorado</option>
+                              <option value="CT">Connecticut</option>
+                              <option value="DE">Delaware</option>
+                              <option value="FL">Florida</option>
+                              <option value="GA">Georgia</option>
+                              <option value="HI">Hawaii</option>
+                              <option value="ID">Idaho</option>
+                              <option value="IL">Illinois</option>
+                              <option value="IN">Indiana</option>
+                              <option value="IA">Iowa</option>
+                              <option value="KS">Kansas</option>
+                              <option value="KY">Kentucky</option>
+                              <option value="LA">Louisiana</option>
+                              <option value="ME">Maine</option>
+                              <option value="MD">Maryland</option>
+                              <option value="MA">Massachusetts</option>
+                              <option value="MI">Michigan</option>
+                              <option value="MN">Minnesota</option>
+                              <option value="MS">Mississippi</option>
+                              <option value="MO">Missouri</option>
+                              <option value="MT">Montana</option>
+                              <option value="NE">Nebraska</option>
+                              <option value="NV">Nevada</option>
+                              <option value="NH">New Hampshire</option>
+                              <option value="NJ">New Jersey</option>
+                              <option value="NM">New Mexico</option>
+                              <option value="NY">New York</option>
+                              <option value="NC">North Carolina</option>
+                              <option value="ND">North Dakota</option>
+                              <option value="OH">Ohio</option>
+                              <option value="OK">Oklahoma</option>
+                              <option value="OR">Oregon</option>
+                              <option value="PA">Pennsylvania</option>
+                              <option value="RI">Rhode Island</option>
+                              <option value="SC">South Carolina</option>
+                              <option value="SD">South Dakota</option>
+                              <option value="TN">Tennessee</option>
+                              <option value="TX">Texas</option>
+                              <option value="UT">Utah</option>
+                              <option value="VT">Vermont</option>
+                              <option value="VA">Virginia</option>
+                              <option value="WA">Washington</option>
+                              <option value="WV">West Virginia</option>
+                              <option value="WI">Wisconsin</option>
+                              <option value="WY">Wyoming</option>
+                            </select><br>
+                            <label class= "formlabel" for="zip">zip:</label>
+                            <input type="zip" id="zip" name="zip" size="5" maxlength="5" data-rule-required="true" data-msg-required="Zip Code is Required"><br>
+                            <label for="zip" class="error"></label><br/>
+                            <hr>
+                            <label class= "formlabel" for="medications">Taking Medications:</label> 
+                            <label for="yes"><input type="radio" name="y" id="y" value="y">yes</label>
+                            <label for="no"><input type="radio" name="n" id="n" value="n">no</label><br><br>
+                            <label class= "formlabel" for="zip">if yes,list medications here:</label>
+                            <textarea name="medications" cols="25" rows="5" data-rule-required="true" data-msg-required="Zip Code is Required"></textarea>
+                            <label for="medications" class="error"></label><br/>
+                            <br>
+                             <br>
+                             <hr>
+                            <input type="submit" value="Submit Patient Form">
+                     
+                        </form>
+                    
+                   
+          
+                  </section><!--section home closing-->
+    
+                  <section id="home"><!--section history opening-->
+                    <h1>Learn From Everything </h1>
+
+               <p>I would recommend that a person learn from everything that you do or have access to.</p>
+                <p>Sometimes it's all about connecting the dots and understanding how things work.</p> 
+                
+                <p>That is a way to figure out what you are good at and also a way to find out the next idea, </p> <p>that could make you a successful entrepreneur and fill a demand that could change the game.
+              </p>
+                              
+                           
+                         
+       
+               </section><!--section history closing-->
+
+               <section id="home">
+                     
+ 
+                <h1>Soft Skills </h1>
+  
+                <p>I would recommend that a person learn from everything that you do or have access to. Sometimes it's all about connecting the dots and understanding how things work. That is a way to figure out what you are good at and also a way to find out the next idea that could make you a successful entrepreneur and fill a demand that could change the game.
+               </p>
+               
+   </section>
+
+                
+    
+                  
+    
+          </div> 
+    
+          <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+          <script src="assets/js/script.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        </body>
+    </html>  
