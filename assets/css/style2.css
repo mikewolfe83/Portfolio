@@ -16,6 +16,7 @@ body{
     color:#a58a11f4;
     -webkit-text-stroke-width: .3px; 
     -webkit-text-stroke-color: rgb(241, 242, 245);
+    overflow: 
 
 }
 
@@ -23,7 +24,7 @@ body{
     width: 100%;
     height: 100%;
     /*Css smooth Scroll */
-    overflow-y: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory; 
 
@@ -164,6 +165,10 @@ section p:hover{
     }
 
 /*landing section */
+
+section#landing{
+    
+}
 
 
 /* home section */
